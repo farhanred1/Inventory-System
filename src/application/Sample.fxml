@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <top>
+      <Pane prefHeight="46.0" prefWidth="780.0" style="-fx-background-color: #0E0E2C;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="110.0" layoutY="10.0" prefHeight="27.0" prefWidth="780.0" text="Inventory Management System" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label layoutX="1226.0" layoutY="15.0" text="Label" />
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ecf1f4;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutY="27.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#page1" prefWidth="200.0" style="-fx-background-color: transparent;" text="page1" textOverrun="CLIP">
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Component%2025%20–%201.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button mnemonicParsing="false" onAction="#page2" prefWidth="200.0" style="-fx-background-color: transparent;" text="page2" textOverrun="CLIP">
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Component%2027%20–%201.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Button>
+                  <Button mnemonicParsing="false" onAction="#page3" prefWidth="200.0" style="-fx-background-color: transparent;" text="page3" textOverrun="CLIP">
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Component%2026%20–%201.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane fx:id="contentArea" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #F5F3F3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
